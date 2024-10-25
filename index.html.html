@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow Reporting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .form-section {
+      margin-bottom: 20px;
+    }
+
+    .form-section label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .form-section select, .form-section input[type="date"] {
+      padding: 8px;
+      margin-right: 10px;
+    }
+
+    .grid-wrapper {
+      display: flex;
+      gap: 0;
+      margin-bottom: 10px;
+      border-collapse: collapse;
+    }
+
+    .grid-header, .grid-item, .editable {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    .grid-item{
+      font-size: 12px;
+    }
+
+    .grid-header {
+      font-weight: bold;
+      background-color: black;
+      color: white;
+    }
+
+    .editable {
+      cursor: text;
+    }
+
+    [contenteditable]:focus {
+      outline: 2px solid #007bff;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      padding: 10px 15px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.9;
+    }
+
+    select.time-dropdown {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .success-message {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<script>
+
+    function MyFunction()
+    {
+        console.log('click open')
+        let strWindowFeatures = "location=yes,height=570,width=520,scrollbars=yes,status=yes";
+                          window.open("https://google.com", '_blank')
+                          return false;
+    }
+
+
+  </script>
+<body>
+
+  <h1>Flow Reporting</h1>
+
+
+    <a id="myLink" href="#" onclick="MyFunction();">link text</a>
+
+
+
+</body>
+</html>
